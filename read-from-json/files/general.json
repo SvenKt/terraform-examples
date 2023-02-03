@@ -1,0 +1,32 @@
+{
+  "base-info": {
+    "aws-profile" : "dev",
+    "aws-region" : "eu-central-1"
+  },
+  "vpc" : {
+    "namespace" : "test",
+    "cidr" : "175.22.0.0/16"
+  },
+  "subnets" : {
+    "frontend-1" : {
+      "cidr" : "175.22.0.0/24",
+      "az" : "eu-central-1a",
+      "ns" : "test"
+    },
+    "frontend-2" : {
+      "cidr" : "175.22.1.0/24",
+      "az" : "eu-central-1b",
+      "ns" : "test"
+    },
+    "appl-1" : {
+      "cidr" : "175.22.2.0/24",
+      "az" : "eu-central-1c",
+      "ns" : "test"
+    },
+    "db-1" : {
+      "cidr" : "175.22.3.0/24",
+      "az" : "eu-central-1a",
+      "ns" : "test"
+    }
+  }
+}
